@@ -85,9 +85,7 @@ const getFarthestUsers = () => {
             }
         }
     }
-
     return farthestPoints
-
 }
 
 const categories = getCategoryTotalValue()
