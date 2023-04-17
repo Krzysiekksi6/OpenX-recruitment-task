@@ -1,6 +1,6 @@
 ﻿# OpenX-recruitment-task
  
- ##Results:
+ #Results:
 
 Creates a data structure containing all available product categories and the total value of
   { category: "men's clothing", amount: 204.23 },                                     
