@@ -1,7 +1,7 @@
 ﻿# OpenX-recruitment-task
  
  #Results:
-
+```
 Creates a data structure containing all available product categories and the total value of
   { category: "men's clothing", amount: 204.23 },                                     
   { category: 'jewelery', amount: 883.98 },
@@ -26,4 +26,4 @@ Finds the two users living furthest away from each other
   { id: 1, latitude: '-37.3159', longitude: '81.1496' },
   { id: 5, latitude: '40.3467', longitude: '-40.1310' }
 ]
-
+```
