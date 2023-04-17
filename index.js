@@ -1,11 +1,15 @@
 import { getDistance } from 'geolib';
-import {handleProducts} from "./api/products.js";
-import {handleUsers} from "./api/users.js";
-import {handleCarts} from "./api/carts.js";
+import {handleData} from "./api/handleData.js";
 
-const products = await handleProducts();
-const users = await handleUsers();
-const carts = await handleCarts();
+const BASIC_URL = 'https://fakestoreapi.com'
+const USERS_URL = `${BASIC_URL}/users`
+const PRODUCTS_URL = `${BASIC_URL}/products`
+const CARTS_URL = `${BASIC_URL}/carts/?startdate=2000-01-01&enddate=2023-04-07`
+
+
+const products = await handleData(PRODUCTS_URL);
+const users = await handleData(USERS_URL);
+const carts = await handleData(CARTS_URL);
 
 const getCategoryTotalValue = () => {
     const categories = {};
